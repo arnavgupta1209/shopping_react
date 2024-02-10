@@ -7,11 +7,11 @@ function Router() {
     const router = createBrowserRouter([
         {
             path: '/',
-            component: <Home />
+            element: <Home />
         },
         {
             path: '/shop',
-            component: <Shop />
+            element: <Shop />
         },
     ]);
     return <RouterProvider router={router} />;

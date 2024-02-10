@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Shop() {
     return (<>
         <Navigation />
-        <div>
+        <div className="maincontainerdiv">
             <h1>Shop</h1>
         </div>
     </>)

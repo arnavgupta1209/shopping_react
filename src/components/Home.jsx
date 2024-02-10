@@ -5,8 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Home() {
   return (<>
     <Navigation />
-    <div>
-      <h1>Home</h1>
+    <div className="maincontainerdiv bg-red">
+      <div className="smallerdiv"></div>
+      <div className="smallerdiv"></div>
     </div>
   </>);
 }

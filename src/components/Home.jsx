@@ -5,10 +5,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Home() {
   return (<>
     <Navigation />
-    <div className="maincontainerdiv bg-red">
-      <div className="smallerdiv"></div>
+    <div className="maincontainerdiv flex">
+      <div className="smallerdiv flex">
+        <div></div>
+        <div></div>
+      </div>
       <div className="smallerdiv"></div>
     </div>
+    <footer></footer>
   </>);
 }
 

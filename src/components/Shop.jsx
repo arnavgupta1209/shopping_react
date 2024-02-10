@@ -1,4 +1,6 @@
 import Navigation from "./Navigation";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function Shop() {

@@ -1,17 +1,18 @@
 import Navigation from "./Navigation";
-import { useState } from "react";
+import Itemcard from "./Itemcard";
 
-
-function Shop() {
-
-    const [price, setPrice] = useState(0);
-    
-    
-
+function Shop({data, cart, setItem}) {
+    let cards = (<></>);
+    if (data != null){
+        cards = (<>
+        {
+            data.map((element) => <Itemcard key = {element.id} id = {element.id} data={data} cart = {cart} setItem={setItem}/>)
+        }</>);
+    }
     return (<>
-        <Navigation shop="true" price = {price}/>
-        <div className="maincontainerdiv grow">
-            <h1>Shop</h1>
+        <Navigation data = {data} cart = {cart}/>
+        <div className=" grow flex min-w-full flex-wrap ">
+            {cards}
         </div>
     </>)
 }
